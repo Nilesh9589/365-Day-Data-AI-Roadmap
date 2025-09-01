@@ -1,0 +1,35 @@
+## Why You Need `print()`
+
+### **Question:** Why is my output blank when I run a command like `type(e)` in my `.py` file?
+
+**Answer:** Running a command like `type(e)` is like doing a calculation in your head. Python knows the answer, but it doesn't **show it** to you automatically.
+
+The **`print()`** function is the command you use to tell Python, "Okay, now display that answer on the screen."
+
+## Why Type Conversion Needs Reassignment
+
+### **Question:** Why doesn't a function like `float(a)` permanently change my original variable?
+
+**Answer:** Functions like `float()` and `int()` work like a **photocopy machine**. They create a **new** value of the desired type but leave the **original** variable untouched.
+
+To save the change, you must **reassign** the new value back to the variable, like this: `a = float(a)`.
+
+## Why `input()` Needs a Conversion
+
+### **Question:** Why did my pay calculator fail with a `TypeError` when I tried to multiply the hours worked?
+
+**Answer in Simple Terms:** The `input()` function is like a telephone operator who only writes messages on paper—it **always gives you a string (text)**, even if the user types in numbers.
+
+You can't do math with a piece of paper. You first need to read the number on it and put it in a calculator. That's what `float()` or `int()` does—it converts the string from `input()` into a **real number** that Python can use for calculations.
+
+**Example of the fix:**
+
+```python
+# Get the input as a string (paper message)
+hour_str = input("Hour worked: ")
+
+# Convert it to a number (put it in the calculator)
+hour_num = float(hour_str)
+
+# Now the math works!
+gross_pay = hour_num * 2.75
