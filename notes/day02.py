@@ -57,3 +57,12 @@ rph=2.75
 gross_pay=hour_num*rph
 print("your gross pay is :",gross_pay)
 
+# adding two strings taking  input from user
+
+firstname=input("whats your first name ")
+lastname=input("whtas your last name ")
+spacestring=(' ')
+fullname=firstname+spacestring+lastname
+print(fullname ) 
+
+
