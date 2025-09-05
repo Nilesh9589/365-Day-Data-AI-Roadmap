@@ -79,13 +79,50 @@ for findingvar in [1,8,9,8,48,98,7,815,8,5,9,4,9,1,21,6,89,4]:
 print(find,findingvar) 
 
 
-#finding smallest from list
+#finding smallest from list using None as a constant
 
 smallest=None
 
 for smallestsofar in [8,9,15,98,354,85,98,3]: 
-     if smallestsofar<smallest:
-          smallest=smallestsofar
-print(smallest)          
+
+     if smallest is None:
+        smallest=smallestsofar
+     elif smallestsofar<smallest :
+         smallest=smallestsofar
+         print(smallest)      
+
+"""
+Write a program that repeatedly prompts a user for integer numbers until the
+user enters 'done'. Once 'done' is entered, print out the largest and smallest of the
+numbers. If the user enters anything other than a valid number catch it with a
+try/except and put out an appropriate message and ignore the number. 
+"""
+largestnum=0
+smallestnum=1000       
+while True:
+    num=input("<")
+    if num=="done":
+        break
+    
+    try:
+        num=int(num)
+        
+
+    except:
+        print("enter a valid num")
+        continue     
+
+    if num>largestnum:
+        largestnum=num
+    if num<smallestnum:
+        smallestnum=num
+
+print("smallest,largest,",smallestnum,largestnum)            
+
+
+
+
+
       
 
+             
