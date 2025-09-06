@@ -70,3 +70,24 @@ function to the string variable
 the original string, instead the
 return a new string that has
 been altered
+
+Searching a String
+• We use the find() function to search
+for a substring within another string
+• find) finds the first occurrence of the
+substring
+• If the substring is not found, find()
+returns -1
+• Remember that string position starts
+at zero
+
+Search and Replace
+• The replace) function
+is like a "search and
+replace" operation in a
+word processor
+• It replaces all
+occurrences of the
+search string with the
+replacement string
+

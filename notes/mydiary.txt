@@ -1,0 +1,2 @@
+Day 3: Learning about files.
+It's a foundational skill for data science.

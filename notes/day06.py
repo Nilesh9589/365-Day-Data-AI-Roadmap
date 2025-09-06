@@ -62,12 +62,64 @@ elif name>'nilesh':
 name='nileshMukati'
 change=name.lower()  #will change all to smalller 
 print(change)
+#2nd way to make lower
+print("hi there Nilesh".lower())
+#what all functions string can do to check it we have <class 'str'>
 
+name='nilesh'
+type(name)
 
+print(dir(name))
 
+#use of find () function
 
-
-
+name='nilesh'
+pos=name.find("e") #
+print(pos)
     
-   
+#search and replace
 
+name ='Nilesh'
+repname=name.replace('Nilesh','Ravi')
+print(repname)   
+print(name)
+
+#stripping whitespace 
+
+name='      nilesh   '
+repspace=name.lstrip()
+#left side
+print(repspace)
+#right side
+repspace=name.rstrip()
+print(repspace)
+#both side space 
+repspace=name.strip()
+print(repspace)
+
+#prefixes
+line='have a nice day you fool'
+if line.startswith('have'):
+    print(True)
+
+#parsing and extracting 
+data = 'From stephen.marquard@uct.ac.za Sat Jan 5 09:14:16 2008'
+atpos=data.find('@')
+print(atpos)
+
+space=data.find(" ",atpos)                 #for finding space in same program
+print(space)
+
+host=data[atpos+1 : space]
+print(host)
+
+#str = 'X-DSPAM-Copfidence: 0.8475'
+string='X-DSPAM-Copfidence: 0.8475'
+collon=string.find(":")
+print(collon)
+conversion=(string[collon+1:])
+conversion=conversion.lstrip()
+
+
+
+print(float(conversion))
