@@ -78,3 +78,20 @@ def checker():
     print(newstockprice)
 
 checker()    
+ 
+ #merge both the list 
+print('i m here')
+friends=['vasu','bhushan','harsh','kanwaljeet','aditya']
+contribution=[999,454,888,787,48]
+a=0
+mergelist=[]
+for i in friends:
+    i=mergelist.append(i)
+    for a in contribution:
+        a=mergelist.append(a)
+    
+
+print(mergelist)   
+
+   
+        
