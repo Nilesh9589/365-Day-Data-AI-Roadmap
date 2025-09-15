@@ -109,3 +109,8 @@ print("\nDiagonal Elements:", diagonal)
 
 # You can then perform operations on it, like finding the trace
 print("Sum of the diagonal (the Trace):", diagonal.sum())
+#data type 
+arr1 = np.array([1, 2, 3])      # All integers
+arr2 = np.array([1.0, 2, 3])   # Contains one float
+
+print(f"the data type of each is for arr 1 is {arr1.dtype}  and for arr 2 is {arr2.dtype}")

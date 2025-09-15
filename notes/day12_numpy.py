@@ -177,3 +177,64 @@ data = np.array([
 max_of_means = data.mean(axis=1).max()
 
 print(f"The max of the row means is: {max_of_means}")
+
+#linspace conecpt 
+import numpy as np
+# Create an array of 5 evenly spaced numbers between 0 and 100
+# np.linspace(start, stop, num_of_elements)
+
+my_linspace=np.linspace(0,100,5)
+print(my_linspace)
+
+#fancy indexing .
+import numpy as np
+# A sample array of letters (pretend they are data points)
+data=np.array(["A","B","C","D","E","F"])
+# Use a list to select the elements at indices 0, 3, and 5
+indices_to_get = [0, 3, 5]
+selected_data = data[indices_to_get]
+print(f"The selected data is: {selected_data}")
+
+import numpy as np
+
+# A 2D array with 5 rows
+matrix = np.array([
+    [1, 2],    # Row 0
+    [3, 4],    # Row 1
+    [5, 6],    # Row 2
+    [7, 8],    # Row 3
+    [9, 10]    # Row 4
+])
+
+# Task: Use fancy indexing to create a new array containing
+# only the first, third, and fourth rows (indices 0, 2, and 3).
+indices_to_get=[0,2,3]
+new_array=matrix[indices_to_get]
+print(new_array)
+
+## Final Concept: Broadcasting
+
+import numpy as np
+matrix=np.array([[1,2,3],
+                [4,5,6]])
+# A 1D array (1 row, 3 columns)
+row_to_add = np.array([10, 20, 30])
+# Broadcast the addition
+result = matrix + row_to_add
+print("Matrix shape:", matrix.shape) # (2, 3)
+print("Row shape:", row_to_add.shape)  # (3,)
+print("\nResult of broadcasting:\n", result)
+
+#mineturn pratice for above
+import numpy as np
+
+sales = np.array([
+    [100, 110, 120], # Product A's sales for Day 1, 2, 3
+    [150, 160, 170]  # Product B's sales for Day 1, 2, 3
+])
+
+daily_bonus = np.array([5, 10, 15]) # Bonus for Day 1, 2, 3
+
+# Add the daily_bonus to the sales array.
+final=daily_bonus+sales
+print(final)
