@@ -109,6 +109,45 @@ sentence = "The quick brown fox jumps over the lazy dog."
 frequencies = word_frequency(sentence)
 print(frequencies)
       
+#oops class 
+class Portfolio:
+   def __init__(self,):
+      self.holdings={}
 
+   def add_stock(self, ticker, shares):
+      ticker=input("<tell me ur share name")
+      shares=input("<enter total number of shares")
+      self.holdings.apend(ticker,shares)
+      return self.holdings
+   
+   def get_total_value(self, current_prices):
+     current_prices=input("<enter the price os share ")
+     current_prices.self ={'price'}
+
+
+####
+if __name__ == '__main__':
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
+
+    # The list comprehension generates all coordinates and filters them in one line
+    result = [[i, j, k] for i in range(x + 1) for j in range(y + 1) for k in range(z + 1) if (i + j + k) != n]
+    
+    print(result)
+####
+names = ["alice", "bob", "charlie", "david", "eve"]
+
+# Your list comprehension here
+
+long_names_upper = [name.upper() for name in names if len(name)>4]
+
+
+print(long_names_upper)
+# Expected Output: ['ALICE', 'CHARLIE', 'DAVID']
+
+      
+   
 
    
